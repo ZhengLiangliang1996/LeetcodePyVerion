@@ -12,13 +12,9 @@ class Solution:
         :type n: int
         :rtype: List[int]
         """
+        # 公式 G（i） = i ^ (i / 2)
+        # 
         y = []
-        if(n == 0):
-            return y.append()
-        a = int(math.pow(2, n))
-        for i in range(a):
-            y.append(i)
+        for i in range(2 << n):
+            y.append(i ^ i >> 1)
         return y
-    
-a = Solution()
-a.grayCode(4)
