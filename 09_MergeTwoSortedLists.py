@@ -53,3 +53,6 @@ def main():
     while(L3.next is not None):
         print(L3.val)
         L3 = L3.next
+
+if __name__ == '__main__':
+    main()
